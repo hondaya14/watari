@@ -1,2 +1,11 @@
 [tools]
 python = "3.13.5"
+
+[env]
+_.file = '.env'
+
+[tasks.export]
+run = [
+	'uv export',
+	'uv export --format requirements-txt --locked -o requirements.txt'
+]
