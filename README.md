@@ -4,7 +4,7 @@
 
 ### Google Calendar
 
-TODO()
+- Get events
 
 ## How to run
 
