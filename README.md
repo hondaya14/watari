@@ -1,4 +1,7 @@
 # Watari
+<div align="center">
+  <img width="400" height="271" alt="watari" src="https://github.com/user-attachments/assets/31fb802b-110a-4e11-bd19-bc593f4e397a" />
+</div>
 
 ## Integrated Tools
 
