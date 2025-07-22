@@ -1,12 +1,15 @@
 import os
 import datetime
 import typing
+import warnings
 from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from google.oauth2.credentials import Credentials
 
+# [WORK AROUND] Suppress Pydantic warnings
+warnings.filterwarnings("ignore", category=UserWarning, module="pydantic.json_schema")
 
 SCOPES = ['https://www.googleapis.com/auth/calendar.events']
 
