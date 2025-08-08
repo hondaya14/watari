@@ -2,24 +2,16 @@
   "mcpServers": {
     "serena": {
       "type": "stdio",
-      "command": "docker",
+      "command": "uvx",
       "args": [
-        "run",
-        "--rm",
-        "-i",
-        "--network",
-        "host",
-        "-v",
-        "/Users/nqv/Repositories/Tools/watari:/workspaces/projects",
-        "ghcr.io/oraios/serena:latest",
+        "--from",
+        "git+https://github.com/oraios/serena",
         "serena",
         "start-mcp-server",
-        "--transport",
-        "stdio",
         "--context",
         "ide-assistant",
         "--project",
-        "/workspaces/projects"
+        "/Users/nqv/Repositories/Tools/watari"
       ],
       "env": {}
     }
