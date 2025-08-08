@@ -16,4 +16,4 @@ wheels/
 credential.json
 token.json
 
-.serena
+.serena/cache/
