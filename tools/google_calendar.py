@@ -13,11 +13,6 @@ warnings.filterwarnings("ignore", category=UserWarning, module="pydantic.json_sc
 
 SCOPES = ['https://www.googleapis.com/auth/calendar']
 
-def today() -> str:
-    """Get today's date in YYYY-MM-DD format."""
-    return datetime.date.today().strftime('%Y-%m-%d')
-
-
 def authenticate():
     """Authenticate and return the Google Calendar API service."""
     creds: typing.Union[Credentials, None] = None
