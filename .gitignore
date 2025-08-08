@@ -15,3 +15,5 @@ wheels/
 # Credential Files
 credential.json
 token.json
+
+.serena
